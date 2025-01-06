@@ -1,0 +1,40 @@
+defaultTasks 'run'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    maven { url "https://raw.githubusercontent.com/jacamo-lang/mvn-repo/master" }
+    maven { url "https://jade.tilab.com/maven/" }
+
+    flatDir { dirs 'lib' }
+}
+
+dependencies {
+    implementation 'io.github.jason-lang:jason-interpreter:3.2.0'
+
+    // to use locally installed jars:
+    implementation fileTree(dir: 'lib', include: '*.jar')
+	implementation files('lib/eismassim-4.1-jar-with-dependencies.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir '.'
+        }
+    }
+}
+
+task run (type: JavaExec, dependsOn: 'classes') {
+    description 'runs the application'
+    mainClass = 'jason.infra.local.RunLocalMAS'
+    args = ['mapc2019.mas2j']
+    classpath sourceSets.main.runtimeClasspath
+}
+
+clean {
+    delete 'bin'
+    delete 'build'
+}
+

@@ -1,0 +1,30 @@
+# simple setup file for testing
+
+terrain 9 16 obstacle
+terrain 7 12 obstacle
+terrain 12 12 obstacle
+terrain 15 15 obstacle
+terrain 17 15 obstacle
+terrain 22 26 obstacle
+terrain 23 26 obstacle
+terrain 7 2 obstacle
+terrain 7 0 obstacle
+terrain 2 10 obstacle
+
+stop    # stops further setup execution
+
+move 3 3 A1
+move 6 3 A2
+add 4 3 dispenser b1
+add 5 3 dispenser b2
+add 3 5 block b1
+terrain 5 5 obstacle
+terrain 5 6 empty
+terrain 6 6 goal
+
+# create task test 100 1,0,b1;2,0,b2
+
+create task test 100 1,0,b1
+move 10 10 A3
+add 11 10 block b1
+attach 10 10 11 10

@@ -1,0 +1,8 @@
+  "entities": [
+    {"name": "connectionB1", "username": "B1", "password": "1", "print-iilang": false, "print-json": false},
+    {"name": "connectionB2", "username": "B2", "password": "1", "print-iilang": false, "print-json": false},
+    {"name": "connectionB3", "username": "B3", "password": "1", "print-iilang": false, "print-json": false},
+    {"name": "connectionB4", "username": "B4", "password": "1", "print-iilang": false, "print-json": false},
+    {"name": "connectionB5", "username": "B5", "password": "1", "print-iilang": false, "print-json": false}
+  ]
+}
