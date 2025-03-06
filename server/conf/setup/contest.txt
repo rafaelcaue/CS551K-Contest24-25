@@ -1,14 +1,26 @@
 # simple setup file for testing
 
+terrain 8 15 obstacle
+terrain 7 14 obstacle
 terrain 9 16 obstacle
 terrain 7 12 obstacle
 terrain 12 12 obstacle
 terrain 15 15 obstacle
 terrain 17 15 obstacle
+terrain 19 15 obstacle
+terrain 19 13 obstacle
+terrain 13 4 obstacle
+terrain 14 4 obstacle
+terrain 13 4 obstacle
+terrain 14 5 obstacle
+terrain 14 6 obstacle
 terrain 22 26 obstacle
 terrain 23 26 obstacle
-terrain 7 2 obstacle
-terrain 7 0 obstacle
+terrain 4 21 obstacle
+terrain 4 20 obstacle
+terrain 4 22 obstacle
 terrain 2 10 obstacle
+terrain 6 15 obstacle
+
 
 stop    # stops further setup execution
